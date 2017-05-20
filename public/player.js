@@ -69,4 +69,9 @@ class Player {
     }
     this.play()
   }
+  
+  playAt(timecode, playingCallback) {
+    this.player.seekTo(timecode / 1000)
+    this.play(playingCallback)
+  }
 }
