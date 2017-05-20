@@ -34,5 +34,24 @@ class Loader {
         })
       })
     }
+    
+    if (slug === 'yeaboi') {
+      let yeaboi = new Player('nlLqaezOquU', _ => {
+        yeaboi.playAt(200, _ => {
+          window.setTimeout(_ => {
+            yeaboi.playAt(200)
+            window.setTimeout(_ => {
+              yeaboi.playAt(200)
+              window.setTimeout(_ => {
+                yeaboi.playAt(200)
+                window.setTimeout(_ => {
+                  yeaboi.playAt(0)
+                }, 500)
+              }, 500)
+            }, 500)
+          }, 500)
+        });
+      })
+    }
   }
 }
