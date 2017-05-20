@@ -46,12 +46,25 @@ class Navigation {
     if (this.navigationCallback) {
       this.navigationCallback.call(this, slug)
     }
+    this.setHighlight(slug)
   }
 
   popState(event) {
     const slug = document.location.pathname.substr(1)
     if (this.navigationCallback) {
       this.navigationCallback.call(this, slug)
+    }
+    this.setHighlight(slug)
+  }
+
+  setHighlight(slug) {
+    const currentHighlight = this.container.querySelector('.current')
+    if (currentHighlight) {
+      currentHighlight.classList.remove('current')
+    }
+    const newHighlight = this.container.querySelector('a[href="/' + slug + '"]')
+    if (newHighlight) {
+      newHighlight.parentNode.classList.add('current')
     }
   }
 }
