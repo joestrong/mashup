@@ -1,0 +1,11 @@
+{
+  "name": "mashup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:joestrong/mashup.git",
+  "author": "Joe Strong <joestrong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "docker-compose up -d"
+  }
+}
