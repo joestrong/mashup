@@ -6,6 +6,13 @@
   "author": "Joe Strong <joestrong@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "docker-compose up -d"
+    "start": "docker-compose up -d",
+    "build": "docker-compose build && docker-compose up -d && yarn notify",
+    "watch": "watch 'yarn build' public",
+    "notify": "notify -t 'Built' -m 'Built'"
+  },
+  "devDependencies": {
+    "node-notifier-cli": "^1.0.1",
+    "watch": "^1.0.2"
   }
 }
