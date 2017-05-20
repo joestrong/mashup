@@ -14,7 +14,7 @@ class Navigation {
     const navitems = [
       { name: 'Home', slug: '' },
       { name: 'Open Fire!', slug: 'open-fire' },
-      { name: 'Dank', slug: 'dank' }
+      { name: 'Yea Boi', slug: 'yeaboi' }
     ]
 
     for (let i = 0; i < navitems.length; i++) {
