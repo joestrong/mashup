@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mashup</title>
+    <style>
+        .current {
+            background: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation"></div>
+    <div id="players"></div>
+
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <script src="player.js"></script>
+    <script src="loader.js"></script>
+    <script src="navigation.js"></script>
+    <script>
+        const loader = new Loader()
+        new Navigation('#navigation', slug => {
+            loader.load(slug)
+        })
+        function onYouTubeIframeAPIReady() {
+            loader.setReady()
+        }
+    </script>
+</body>
+</html>
