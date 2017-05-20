@@ -19,6 +19,8 @@
     <script src="navigation.js"></script>
     <script>
         const loader = new Loader()
+        const slug = window.location.pathname.substr(1)
+        loader.load(slug)
         new Navigation('#navigation', slug => {
             loader.load(slug)
         })
