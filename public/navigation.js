@@ -12,7 +12,6 @@ class Navigation {
     this.container.appendChild(ul)
 
     const navitems = [
-      { name: 'Home', slug: '' },
       { name: 'Open Fire!', slug: 'open-fire' },
       { name: 'Yea Boi', slug: 'yeaboi' }
     ]
