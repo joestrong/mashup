@@ -28,7 +28,7 @@ class Loader {
     }
     
     if (slug === 'open-fire') {
-      this.setStatus('Loading')
+      this.setStatus('Loading...')
       let pirates = new Player('QrOTgZz2TYM', _ => {
         let kids = new Player('xUMUEaaqlWA', _ => {
           this.setStatus('')
@@ -43,7 +43,7 @@ class Loader {
     }
     
     if (slug === 'yeaboi') {
-      this.setStatus('Loading')
+      this.setStatus('Loading...')
       let yeaboi = new Player('nlLqaezOquU', _ => {
         this.setStatus('')
         yeaboi.playAt(200, _ => {
