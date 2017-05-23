@@ -1,0 +1,3 @@
+mashup:
+  container_name: mashup
+  build: ./
